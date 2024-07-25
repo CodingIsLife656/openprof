@@ -13,7 +13,7 @@ dotenv.config({ path: path.join(_dirname, "back-end/config/config.env") })
 app.use(express.json());
 
 app.use(cors({
-    // origin: [process.env.FRONT_END_URL],
+    origin: ["*"],
     methods: ["POST", "PUT", "GET", "DELETE"],
     credentials: false,
 }))
