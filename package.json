@@ -1,0 +1,24 @@
+{
+  "name": "reactcrud",
+  "version": "1.0.0",
+  "description": "crud demo",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon back-end/app.js",
+    "dev": "set NODE_ENV=development&&nodemon back-end/app.js",
+    "prod": "set NODE_ENV=production&&nodemon back-end/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abinash",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.2",
+    "validator": "^13.12.0"
+  }
+}

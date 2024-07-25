@@ -1,0 +1,21 @@
+form{
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    -webkit-box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
+    -moz-box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
+    box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
+    background-color: #ffffff59;
+    margin-top:10%;
+    /* height: 400px; */
+}
+.form-control{
+    border: 1px solid #eee;
+    border-radius: 0;
+
+    
+}
+.btn{
+    width: 100px;
+}
