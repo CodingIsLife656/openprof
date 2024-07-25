@@ -12,11 +12,11 @@ const _dirname = path.resolve();
 dotenv.config({ path: path.join(_dirname, "back-end/config/config.env") })
 app.use(express.json());
 
-// app.use(cors({
-//     origin: [process.env.FRONT_END_URL],
-//     methods: ["POST", "PUT", "GET", "DELETE"],
-//     credentials: false,
-// }))
+app.use(cors({
+    origin: [process.env.FRONT_END_URL],
+    methods: ["POST", "PUT", "GET", "DELETE"],
+    credentials: false,
+}))
 
 mongoose.connect(process.env.MONGO_URL, {
     dbName: "CRUD"
