@@ -16,7 +16,7 @@ const Alluser = () => {
     useEffect(() => {
 
         const fetchuser = async () => {
-            const res = await fetch("http://localhost:5000/v1/api/getall")
+            const res = await fetch("http://13.236.167.131:5000/v1/api/getall")
             const data = await res.json();
             setUser(data.User)
             console.log(data.User)
@@ -29,7 +29,7 @@ const Alluser = () => {
 
         const confirm = window.confirm("delete?")
         if (confirm) {
-            const { data } = await axios.delete(`http://localhost:5000/v1/api/delete/` + id)
+            const { data } = await axios.delete(`http://13.236.167.131:5000/v1/api/delete/` + id)
             toast.promise(new Promise((resolve)=>{
                 setTimeout(() => {
                     resolve();
